@@ -4,12 +4,10 @@ public class Post {
     private int id; // id поста
     private String headline; // Имя поста
     private int logo; // Владелец поста
-    private int dropdownMenu; // Раскрывающееся меня
     private String text; // Текст поста
-    private Share Share; // репост
-    private Seen seen; // Количество просмотров
     private Comment comment;
-    private Likes like; // лайки
+    private Like like; // лайки
+    private View view; // Количество просмотров
 
 
     // Доработанно с vk
@@ -18,16 +16,74 @@ public class Post {
     private int date;
     private int replyOwnerId;
     private int replyPostId;
-    private Reposts repost;
+    private Repost repost;
     private String postType;
     private PostSource postSource;
     private Geo geo;
     private int signerId;
     private boolean isFavorite;
-    private int postPonedID;
+    private int canPin;
+    private int canDelete;
+    private int canEdit;
+    private int isPinned;
+    private int markedAsAds;
+    private boolean isFavorite;
+    private int postponedId;
 
-    public void setLike(Likes like) {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getHeadline() {
+        return headline;
+    }
+
+    public void setHeadline(String headline) {
+        this.headline = headline;
+    }
+
+    public int getLogo() {
+        return logo;
+    }
+
+    public void setLogo(int logo) {
+        this.logo = logo;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Comment getComment() {
+        return comment;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
+
+    public Like getLike() {
+        return like;
+    }
+
+    public void setLike(Like like) {
         this.like = like;
+    }
+
+    public View getView() {
+        return view;
+    }
+
+    public void setView(View view) {
+        this.view = view;
     }
 
     public int getFromId() {
@@ -70,11 +126,11 @@ public class Post {
         this.replyPostId = replyPostId;
     }
 
-    public Reposts getRepost() {
+    public Repost getRepost() {
         return repost;
     }
 
-    public void setRepost(Reposts repost) {
+    public void setRepost(Repost repost) {
         this.repost = repost;
     }
 
@@ -118,83 +174,51 @@ public class Post {
         isFavorite = favorite;
     }
 
-    public int getPostPonedID() {
-        return postPonedID;
+    public int getPostponedId() {
+        return postponedId;
     }
 
-    public void setPostPonedID(int postPonedID) {
-        this.postPonedID = postPonedID;
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 
-    public int getId() {
-        return id;
+    public int getCanPin() {
+        return canPin;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
     }
 
-    public String getHeadline() {
-        return headline;
+    public int getCanDelete() {
+        return canDelete;
     }
 
-    public void setHeadline(String headline) {
-        this.headline = headline;
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
     }
 
-    public int getLogo() {
-        return logo;
+    public int getCanEdit() {
+        return canEdit;
     }
 
-    public void setLogo(int logo) {
-        this.logo = logo;
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
     }
 
-    public int getDropdownMenu() {
-        return dropdownMenu;
+    public int getIsPinned() {
+        return isPinned;
     }
 
-    public void setDropdownMenu(int dropdownMenu) {
-        this.dropdownMenu = dropdownMenu;
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
     }
 
-    public String getText() {
-        return text;
+    public int getMarkedAsAds() {
+        return markedAsAds;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public Like getLike() {
-        return like;
-    }
-
-    public void setLike(Like like) {
-        this.like = like;
-    }
-
-    public ru.netology.domain.Share getShare() {
-        return Share;
-    }
-
-    public void setShare(ru.netology.domain.Share share) {
-        Share = share;
-    }
-
-    public Seen getSeen() {
-        return seen;
-    }
-
-    public void setSeen(Seen seen) {
-        this.seen = seen;
-    }
-
-    public Comment getComment() {
-        return comment;
-    }
-
-    public void setComment(Comment comment) {
-        this.comment = comment;
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
     }
 }
