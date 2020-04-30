@@ -1,6 +1,19 @@
 package ru.netology.domain;
 
 public class Place {
+    private int id;
+    private String title;
+    private int latitude;
+    private int longitude;
+    private int created;
+    private String icon;
+    private int checking;
+    private int updated;
+    private int type;
+    private int country;
+    private int city;
+    private int address;
+
     public int getId() {
         return id;
     }
@@ -49,12 +62,12 @@ public class Place {
         this.icon = icon;
     }
 
-    public int getCheckin() {
-        return checkin;
+    public int getChecking() {
+        return checking;
     }
 
-    public void setCheckin(int checkin) {
-        this.checkin = checkin;
+    public void setChecking(int checking) {
+        this.checking = checking;
     }
 
     public int getUpdated() {
@@ -96,17 +109,4 @@ public class Place {
     public void setAddress(int address) {
         this.address = address;
     }
-
-    private int id;
-    private String title;
-    private int latitude;
-    private int longitude;
-    private int created;
-    private String icon;
-    private int checkin;
-    private int updated;
-    private int type;
-    private int country;
-    private int city;
-    private int address;
 }

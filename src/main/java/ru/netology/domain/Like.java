@@ -4,6 +4,7 @@ public class Like {
     private int count;
 
     public int getCount() {
+
         return count;
     }
 

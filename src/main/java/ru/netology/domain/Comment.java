@@ -2,8 +2,9 @@ package ru.netology.domain;
 
 public class Comment {
     private int count;
-    private boolean can_close;
-    private boolean can_open;
+    private boolean canClose;
+    private boolean canOpen;
+
 
     public int getCount() {
         return count;
@@ -13,19 +14,19 @@ public class Comment {
         this.count = count;
     }
 
-    public boolean isCan_close() {
-        return can_close;
+    public boolean isCanClose() {
+        return canClose;
     }
 
-    public void setCan_close(boolean can_close) {
-        this.can_close = can_close;
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 
-    public boolean isCan_open() {
-        return can_open;
+    public boolean isCanOpen() {
+        return canOpen;
     }
 
-    public void setCan_open(boolean can_open) {
-        this.can_open = can_open;
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }

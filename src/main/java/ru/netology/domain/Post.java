@@ -27,7 +27,6 @@ public class Post {
     private int canEdit;
     private int isPinned;
     private int markedAsAds;
-    private boolean isFavorite;
     private int postponedId;
 
     public int getId() {
@@ -174,14 +173,6 @@ public class Post {
         isFavorite = favorite;
     }
 
-    public int getPostponedId() {
-        return postponedId;
-    }
-
-    public void setPostponedId(int postponedId) {
-        this.postponedId = postponedId;
-    }
-
     public int getCanPin() {
         return canPin;
     }
@@ -220,5 +211,13 @@ public class Post {
 
     public void setMarkedAsAds(int markedAsAds) {
         this.markedAsAds = markedAsAds;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 }

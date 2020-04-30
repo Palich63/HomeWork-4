@@ -6,15 +6,12 @@ public class PostManager {
 
     private Post[] posts;
 
-
-    public Post[] WallSearch(){
+    public Post[] wallSearch(int ownerId, String domain, String query, int ownersOnly, int count) {
 
         return null;
     }
 
-    public void Post[] WallDelete(){
-
+    public void wallDelete(int ownerId, int postId) {
 
     }
-
 }
